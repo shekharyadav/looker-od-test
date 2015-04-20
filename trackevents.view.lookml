@@ -27,6 +27,9 @@
 
   - dimension: organization_id
     sql: ${TABLE}.organization_id
+    
+  - dimension: campaign_id
+    sql: ${TABLE}.campaign_id
 
   - dimension: price
     type: number
