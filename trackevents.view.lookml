@@ -59,6 +59,11 @@
     type: number
     format: '$%.2f'
     sql: (${spend}*1000)/${impressions}
+    
+  - measure: average_cpm
+    type: average
+    format: '$%.2f'
+    sql: ${price}
 
   - dimension: remote_ip
     sql: ${TABLE}.remote_ip
