@@ -10,7 +10,7 @@
 
   - dimension_group: created
     type: time
-    timeframes: [time, date, week, month, hour]
+    timeframes: [time, date, week, month, hour, hour_of_day, day_of_week]
     sql: ${TABLE}.created_at
 
   - dimension: custom
