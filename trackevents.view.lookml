@@ -37,7 +37,7 @@
   
   - measure: spend
     type: sum
-    sql: ${TABLE}.price/1000000
+    sql: ${TABLE}.price
 
   - dimension: remote_ip
     sql: ${TABLE}.remote_ip
