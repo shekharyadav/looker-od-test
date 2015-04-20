@@ -44,6 +44,16 @@
     type: count
     filters:
       event_type: 'imp'
+      
+  - measure: clicks
+    type: count
+    filters:
+      event_type: 'click'
+      
+  - measure: installs
+    type: count
+    filters:
+      event_type: 'conv'
     
   - measure: cpm
     type: number
