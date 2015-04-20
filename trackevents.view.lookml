@@ -39,6 +39,15 @@
     type: sum
     format: '$%.2f'
     sql: ${TABLE}.price/1000
+    
+  - measure: impressions
+    type: count
+    filters:
+      event_type: 'imp'
+    
+  - measure: cpm
+    type: number
+    sql: ${impressions}/${spend}
 
   - dimension: remote_ip
     sql: ${TABLE}.remote_ip
