@@ -37,7 +37,7 @@
   
   - measure: spend
     type: sum
-    format: '$#,##0.00'
+    format: '$%.2f'
     sql: ${TABLE}.price/1000
 
   - dimension: remote_ip
