@@ -47,7 +47,7 @@
     
   - measure: cpm
     type: number
-    sql: ${impressions}/${spend}
+    sql: ${impressions}/(${spend}*1000)
 
   - dimension: remote_ip
     sql: ${TABLE}.remote_ip
