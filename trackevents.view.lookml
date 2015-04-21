@@ -60,6 +60,11 @@
     format: '$%.2f'
     sql: (${spend}*1000)/${impressions}
     
+  - measure: cpi
+    type: number
+    format: '$%.2f'
+    sql: (${spend}*1000)/${installs}
+    
   - measure: average_cpm
     type: average
     format: '$%.2f'
