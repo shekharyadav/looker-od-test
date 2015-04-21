@@ -75,6 +75,11 @@
 
   - dimension: user_agent
     sql: ${TABLE}.user_agent
+    
+  - dimension: cord
+    sql_latitude: ${TABLE}.lat
+    sql_longitude: ${TABLE}.lng
+    type: location
 
   - measure: count
     type: count
