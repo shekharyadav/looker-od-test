@@ -63,7 +63,7 @@
   - measure: cpi
     type: number
     format: '$%.2f'
-    sql: (${spend}*1000)/${installs}
+    sql: (${spend})/${installs}
     
   - measure: average_cpm
     type: average
