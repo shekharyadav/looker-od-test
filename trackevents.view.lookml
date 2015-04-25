@@ -65,6 +65,11 @@
     format: '$%.2f'
     sql: (${spend})/${installs}
     
+  - measure: cpc
+    type: number
+    format: '$%.2f'
+    sql: (${spend})/${clicks}
+    
   - measure: average_cpm
     type: average
     format: '$%.2f'
