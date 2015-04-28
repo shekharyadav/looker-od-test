@@ -11,4 +11,3 @@
   joins:
     - join: campaigns
       foreign_key: campaign_id
-      type: inner
