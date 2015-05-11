@@ -63,7 +63,7 @@
   - measure: cpi
     type: number
     format: '$%.2f'
-    sql: (${spend})/NULLIF(${installs})
+    sql: (${spend})/NULLIF(${installs},0 )
     
   - measure: cpc
     type: number
