@@ -58,7 +58,7 @@
   - measure: cpm
     type: number
     format: '$%.2f'
-    sql: (${spend}*1000)/${impressions}
+    sql: (${spend}*1000)/NULLIF(${impressions}, 0)
     
   - measure: cpi
     type: number
@@ -68,7 +68,7 @@
   - measure: cpc
     type: number
     format: '$%.2f'
-    sql: (${spend})/${clicks}
+    sql: (${spend})/NULLIF(${clicks}, 0)
     
   - measure: average_cpm
     type: average
